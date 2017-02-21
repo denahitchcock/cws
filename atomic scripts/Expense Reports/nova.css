@@ -1,0 +1,293 @@
+/*nova.css copied from Skeleton application for the new Expense Report Program*/
+
+* {
+	outline: none;
+}
+
+A {
+	text-decoration: none;
+}
+
+A.menuItem :hover {
+	background: #dcdcdc;
+}
+
+BODY {
+	background: #dcdcdc;
+	bottom: 0;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif, "Segoe UI Symbol";
+	font-size: 16px;
+	left: 0;
+	margin: 0;
+	min-height: 640px;
+	min-width: 1295px;
+	padding-top: 111px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+IMG {
+	border-style: none;
+}
+
+INPUT[type=text], INPUT[type=password] {
+	width: 150px;
+	padding: 2px;
+}
+
+INPUT[type=text], INPUT[type=password], INPUT[type=submit], INPUT[type=file], TEXTAREA, BUTTON,
+	SELECT {
+	background: #fff;
+	border: 1px solid #000;
+	color: #000;
+}
+
+BUTTON {
+	margin: 0 4px 4px;
+	cursor: pointer;
+}
+
+BUTTON:disabled {
+	color: #aaa;
+	border-color: #aaa;
+}
+
+FIELDSET {
+	border-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+FIELDSET:disabled LABEL, LABEL.disabled {
+	color: #aaa;
+}
+
+SPAN.menuItem, .menuItemSelected, .menuSubItem, .menuSubItemSelected {
+    border: 1px solid #000;
+    display: block;
+    font-size: 14px;
+    margin: 2px;
+    overflow: hidden;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+A:link, A:visited {
+	color: #000;
+}
+
+.centered {
+	margin: auto;
+}
+
+.menuItemAttn {
+	font-weight: 700;
+}
+
+.menuItemSelected, .menuSubItemSelected {
+	background: #dcdcdc;
+	color: #000;
+}
+
+.menuSubItem, .menuSubItemSelected {
+	padding-left: 12px;
+}
+
+.contentHeader {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.contentMessage {
+	font-size: 16px;
+}
+
+.contents {
+	background: #fff;
+	border: 1px solid #000;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 37px;
+}
+
+.contents > DIV {
+	padding-top: 20px;
+	position: relative;
+}
+
+.contents::after {
+	content: "";
+	display: block;
+	height: 15px;
+}
+
+.errorList {
+	display: inline-block;
+	margin: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: left;
+}
+
+.errormsg {
+	color: red;
+	display: list-item;
+	font-size: 14px;
+	list-style-type: square;
+}
+
+.fieldInput {
+	min-width: 150px;
+	text-align: left;
+	padding-right: 10px;
+}
+
+.fieldLabel {
+	min-width: 100px;
+	text-align: right;
+	padding-left: 10px;
+}
+
+.fieldInput, .fieldLabel {
+	vertical-align: top;
+	font-size: 14px;
+}
+
+DIV.header {
+	background: #fff;
+	border: 1px solid #000;
+	height: 85px;
+	left: 4px;
+	padding: 10px;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+}
+
+.headerText {
+	display: inline-block;
+	font-size: 36px;
+	font-weight: 700;
+	margin: 15px;
+}
+
+.headerText IMG {
+	height: 64px;
+	margin: 0 8px;
+	vertical-align: middle;
+	width: 64px;
+}
+
+.loginMessage {
+	font-size: 13px;
+	position: absolute;
+	right: 12px;
+}
+
+.loginMessage IMG {
+    height: 20px;
+    margin: 0 4px;
+    vertical-align: text-top;
+    width: 20px;
+}
+
+.logo {
+	height: 83px;
+	vertical-align: top;
+	width: 411px;
+}
+
+.mainarea {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.mainarea>DIV {
+	border-collapse: separate;
+	border-spacing: 4px;
+	display: table;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	table-layout: fixed;
+	top: 0;
+	width: 100%;
+}
+
+DIV.cell:first-child {
+	width: 220px;
+}
+
+DIV.cell {
+	display: table-cell;
+	position: relative;
+}
+
+.menu {
+	background: #fff;
+	border: 1px solid #000;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.title {
+	background: #fff;
+	border: 1px solid #000;
+	font-size: 16px;
+	font-weight: 700;
+	height: 25px;
+	left: 0;
+	overflow: hidden;
+	padding: 3px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.title IMG {
+	height: 24px;
+	margin: 0 4px;
+	vertical-align: top;
+	width: 24px;
+}
+
+.userName {
+	font-style: normal;
+	font-weight: 700;
+}
+
+@media all and (-ms-high-contrast: none) , (-ms-high-contrast : active) {
+	.menu {
+		height: calc(100vh - 121px);
+		min-height: 630px;
+		bottom: auto;
+	}
+	.contents {
+		height: calc(100vh - 158px);
+		min-height: 593px;
+		bottom: auto;
+	}
+}
+
+HTML[useragent*='MSIE'] .menu {
+	height: calc(100vh - 121px);
+	min-height: 630px;
+	bottom: auto;
+}
+
+HTML[useragent*='MSIE'] .contents {
+	height: calc(100vh - 158px);
+	min-height: 593px;
+	bottom: auto;
+}

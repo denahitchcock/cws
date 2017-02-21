@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+  <!--3 Column Grid-->
+<html>
+<body>
+  <head>
+<!--Begin Stylesheet-->
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif, "Segoe UI Symbol";
+        }
+        table, td, tr {
+          border: 1px solid black;
+          vertical-align: middle;
+        }
+        tr {
+          height: 20px;
+        }
+        td {
+          font-size: 12px;
+        }
+/* black header row for grid*/
+        #trow {
+          background-color: black;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          text-align: center;
+          padding-top: 10px;
+        }
+/*The title row (first) column bold text light grey background*/
+        .title {
+          text-align: left;
+          padding: 2px;
+          font-weight: bold;
+          background-color: #f2f2f2;
+        }
+    </style>
+    <!--End stylesheet-->
+  </head>
+  <table>
+    <%if fields%1466%rowcount%> <!--ADD INFORMATION HERE-->
+      <%foreach fields%1466%grid%>
+      <tr>
+        <td class="title"><%item%A%></td>
+        <td><%item%B%></td>
+        <td><%item%C%></td>
+      </tr>
+      <%end%>
+    <%end%>
+  </table>
+</body>
+</html>

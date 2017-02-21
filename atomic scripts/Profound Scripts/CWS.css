@@ -1,0 +1,464 @@
+/**********************************************************************
+Change Log
+
+       DATE		PROGRAMMER			DESCRIPTION
+
+	01/18/2017	Patti Shuey			Sync'd with all environments
+
+
+***********************************************************************/
+
+#pui {
+  position: relative;
+}
+
+div#pui {
+  width: 500px;
+  height: 700px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  background-image: url('/profoundui/userdata/images/panels/GreenTransPanel.png');  /*Used in Dev only*/
+ }
+
+/*Universal Attributes*/
+
+* {
+  font-family: "Consolas", monospace;
+  font-size: 12px;
+  color: #3b1e12;
+}
+
+body {
+  /*background-color: none;*/
+  background-image: url(/profoundui/userdata/images/samples/blendedtan.png);*/
+  /*background-repeat: repeat;*/
+  background-color: #F0FFF0;
+}
+INPUT.CWS-input {S
+  font-size: 14px;
+  z-index: 20;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 1;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #e4eac7;
+  background-image: url(/profoundui/proddata/images/input-background.gif);
+  background-repeat: repeat-x;
+}
+
+SELECT.CWS-input {
+  z-index: 20;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 1;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #e4eac7;
+  background-image: url(/profoundui/proddata/images/input-background.gif);
+  background-repeat: repeat-x;
+}
+
+INPUT.CWS-button {
+  button-type: button;
+  button-style: CWS-button;
+  small-button: true;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 16px;
+  width: 144px;
+  height: 25px;
+  top: 65px;
+  cursor: pointer;
+  background-color: #b7c476;
+  color: #582e1c;
+}
+
+INPUT.CWS-bugButton {
+  button-type:  button;
+  button-style: CWS-button;
+  small-button: true;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 16px;
+  width: 144px;
+  height: 25px;
+  top: 65px;
+  cursor: pointer;
+  background-color: #b7c476;
+  color: #582e1c;
+}
+
+INPUT.CWS-std-button {
+  button-type:  button;
+  button-style: CWS-std-button;
+  small-button: true;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 16px;
+  width: 144px;
+  height: 25px;
+  top: 65px;
+  cursor: pointer;
+  background-color: #b7c476;
+  color: #582e1c;
+}
+.CWS-button:hover{
+  background-color: #582e1c;
+  color: #ffffff;
+}
+.CWS-std-button:hover{
+  background-color: #582e1c;
+  color: #ffffff;
+}
+
+/* Standard CSS for panel */
+.panel {
+  font-weight: bold;
+}
+
+.CWS-tab-panel {
+}
+
+.CWS-field-set-panel {
+  text-align: left;
+  font-size: 12px;
+  color: #582e1c;
+  float: right;
+  border: none;
+  background-color: #b7c476;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+}
+
+.CWS-full-screen-panel {
+  text-align: left;
+  font-size: 12px;
+  color: #582e1c;
+  float: right;
+  background-image: url('/profoundui/userdata/images/panels/GreenTransPanel.png');
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+}
+
+/* NOT USED */
+.CWS-prompt-panel {
+  text-align: left;
+  float: left;
+  font-size: 14px;
+  background: linear-gradient(to bottom, #ffffff 38%, #808080 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#808080',GradientType=0 ); /* IE6-9 */
+  left: 0px;
+  top: 890px;
+  height: 60px;
+  width: 1545px;
+}
+
+.CWS-panel {
+  field-type: panel;
+  panel-style: CWS Panel;
+  text-align: "center";
+  font-size: 20px;
+  color: #643d26;
+}
+
+.CWS-label {
+  font-size: 14px;
+  color: #000000;
+}
+
+.CWS-label-brown {
+  font-size: 14px;
+  color: #582e1c;
+}
+
+.CWS-constant {
+  font-size: 14px;
+  color: #333333;
+}
+
+.CWS-constant-bold {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.CWS-output {
+  font-size: 14px;
+  color: black;
+}
+
+.CWS-userinfo {
+  font-size: 14px;
+  color: #582e1c;
+}
+
+/* Subfile Stuff  */
+
+.CWS-subfile-heading {
+  font-size: 12px;
+  color: #582e1c;
+  background-color: #b7c476;
+  font-weight: bold;
+  height: 30px;
+  z-index: 100  /* above grid lines */
+}
+
+DIV.CWS-subfile-heading {
+  color: #582e1c;
+  background-color: #b7c476;
+}
+
+/* CSS for CWS Grid*/
+.CWS-grid {
+  z-index: 9;
+  height: 30px;
+}
+.CWS-grid .cell {
+  text-align: center;
+}
+
+.CWS-grid .header-cell {
+  background-color: #b7c476;
+  background-repeat: repeat-x;
+  text-align: center;
+  font-weight: bold;
+}
+.CWS-grid .header-cell div {
+  text-align: center;
+}
+.CWS-grid .odd {
+  background-color: #f2f2f2;
+}
+.CWS-grid .even {
+  background-color: #ffffff;
+}
+.CWS-grid .odd INPUT.PR {
+
+}
+.CWS-grid .odd INPUT.PR-UL {
+
+}
+.CWS-grid .even INPUT.PR {
+
+}
+.CWS-grid .even INPUT.PR-UL {
+
+}
+.CWS-grid .selected {
+  color: #ffffff;
+  background-color: #e4eac7;
+}
+.CWS-grid .hover {
+  background-color: #e4eac7;
+  background-image: url('/profoundui/proddata/images/grids/crystal/hover.png');
+  background: #ffff99;
+  border-color: #e4eac7;
+  background-repeat: repeat-x;
+}
+
+div.onoff-switch {
+  position: relative;
+  height: 27px;
+  min-height: 27px;
+  max-height: 27px;
+  min-width: 50px;
+  max-width: 550px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.onoff-switch label {
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  display: block;
+  height: 27px;
+  position: absolute;
+  width: auto;
+  top: 0;
+  padding-top: 5px;
+  overflow: hidden;
+}
+.onoff-switch, .onoff-switch label {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+}
+.onoff-switch-disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+label.on-label {
+  color: white;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+  left: 0;
+  padding-top: 5px;
+}
+label.on-label span {
+  padding-left: 8px;
+}
+label.off-label {
+  color: #8b8b8b;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+  text-align: right;
+  right: 0;
+}
+label.off-label span {
+  padding-right: 8px;
+}
+.onoff-handle-left {
+  display: block;
+  height: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  padding-left: 3px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.onoff-handle-right {
+  height: 100%;
+  width: 100%;
+  padding-right: 3px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.onoff-handle-center {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
+
+div.ace_editor, .ace_editor div {
+  padding: 0px;
+}
+div.ace_gutter-cell {
+  padding-left: 19px;
+  padding-right: 6px;
+}
+div.ace_gutter-cell {
+  padding-left: 19px;
+  padding-right: 6px;
+}
+div.ace_gutter-tooltip {
+  padding: 4px;
+}
+div.ace_folding-enabled > div.ace_gutter-cell {
+    padding-right: 13px;
+}
+
+.CWS INPUT.PR {
+  border: 0px solid #ffffff;
+  background-image: none;
+  background-color: transparent;
+  color: #666666;
+}
+
+.CWS INPUT.PR-UL {
+  border: 0px solid #ffffff;
+  background-image: none;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #666666;
+}
+.CWS DIV.RI { background-color: yellow; }
+.CWS INPUT.RI { background-color: yellow; background-image: none; }
+.CWS DIV.TRQ { color: #335588; }
+.CWS INPUT.TRQ { color: #000000; }
+.CWS INPUT.invalid {
+  background-image: url(/profoundui/proddata/images/invalid-underline.gif);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  border-color: #ff0000;
+}
+.CWS-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #582e1c;
+  width: 1147px;
+  height: 30px;
+  left: 150px;
+  top: 10px;
+}
+
+.CWS-title2 {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #582e1c;
+  width: 1147px;
+  height: 15px;
+  left: 150px;
+  top: 60px;
+}
+
+/* NOT USED */
+.CWS-user {
+  position: absolute;
+  color: #ffffff;
+  left: 1620px;
+  top: 40px;
+}
+
+.CWS-logo {
+  left: 5px;
+  top: 15px;
+  height: 40px;
+  width: 305px;
+  z-index: 99;
+}
+
+body.CWS-signon {
+  background-color: #486d9f;
+  background-image: url("/profoundui/userdata/genie skins/CWS/background.gif");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.CWS-actions {
+  background-color:#b7c476;
+  width: 150px;
+  left: 0px;
+  top: 70px;
+  height: 100%;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.CWS-backpanel {
+  background-color:#c6bcb6;
+  width: 700px;
+  height: 550px;
+  padding-top: 130px;
+  padding-left: 200px;
+}
+
+.CWS-topbar {
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 70px;
+  margin-bottom: 5px;
+  background-image: url(TopBar.png);
+  background-size: cover;
+  }
+
+.CWS .top-line {
+  font-size: 15px;
+  top: 5px;
+  left: 1195px;
+  visibility: hidden;
+}

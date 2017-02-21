@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--script specific for middle portion of corporate, non-vender, material specifications
+  Created: DLH 01/12/17-->
+<html>
+<body>
+  <head>
+<!--Begin Stylesheet-->
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          height: 100%;
+          font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif, "Segoe UI Symbol";
+          word-wrap: normal;
+          page-break-inside: avoid;
+        }
+        table, td, tr {
+          border: 1px solid black;
+          vertical-align: middle;
+          word-wrap: normal;
+        }
+        tr {
+          height: 20px;
+        }
+        td {
+          font-size: 12px;
+          text-align: center;
+        }
+/* black header row for grid*/
+        #trow {
+          background-color: black;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          text-align: center;
+          padding-top: 10px;
+        }
+/*The title row (first) column bold text light grey background*/
+        .title {
+          text-align: left;
+          padding: 2px;
+          font-weight: bold;
+          background-color: #f2f2f2;
+        }
+
+    </style>
+    <!--End stylesheet-->
+  </head>
+  <table>
+<!--Header Row also sets each column width to 20%-->
+    <tr id="trow">
+      <td style="width: 10%;"></td>
+      <td style="width: 50%;">Face</td>
+      <td style="width: 15%;">Profile</td>
+      <td style="width: 15%;">Back</td>
+      <td style="width: 10%;">References</td>
+  </tr>
+<!--If rows fields are not empty, print else collapse-->
+  <%if fields%1516%data%>
+  <tr>
+    <td class="title">Color Match Panel</td>
+    <td><%fields%1516%data%></td>
+    <td><%fields%1517%data%></td>
+    <td><%fields%1518%data%></td>
+    <td><%fields%1135%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1519%data%>
+  <tr>
+    <td class="title">Grain Match Panel</td>
+    <td><%fields%1519%data%></td>
+    <td><%fields%1520%data%></td>
+    <td><%fields%1521%data%></td>
+    <td><%fields%1140%data%></td>
+  </tr>
+<%end%>
+
+<%if fields%1522%data%>
+<tr>
+    <td class="title">Color Match Framing</td>
+    <td><%fields%1522%data%></td>
+    <td><%fields%1523%data%></td>
+    <td><%fields%1524%data%></td>
+    <td><%fields%1144%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1525%data%>
+  <tr>
+    <td class="title">Sapwood/Heartwood</td>
+    <td><%fields%1525%data%></td>
+    <td><%fields%1526%data%></td>
+    <td><%fields%1527%data%></td>
+    <td><%fields%1148%data%></td>
+  </tr>
+<%end%>
+
+<%if fields%1528%data%>
+  <tr>
+    <td class="title">Color</td>
+    <td><%fields%1528%data%></td>
+    <td><%fields%1529%data%></td>
+    <td><%fields%1530%data%></td>
+    <td><%fields%1152%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1531%data%>
+  <tr>
+    <td class="title">Quarter-Sawn Flake</td>
+    <td><%fields%1531%data%></td>
+    <td><%fields%1532%data%></td>
+    <td><%fields%1533%data%></td>
+    <td><%fields%1156%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1534%data%>
+  <tr>
+    <td class="title">Curly Grain/Figure</td>
+    <td><%fields%1534%data%></td>
+    <td><%fields%1535%data%></td>
+    <td><%fields%1536%data%></td>
+    <td><%fields%1160%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1537%data%>
+  <tr>
+    <td class="title">Stain</td>
+    <td><%fields%1537%data%></td>
+    <td><%fields%1538%data%></td>
+    <td><%fields%1539%data%></td>
+    <td><%fields%1164%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1540%data%>
+  <tr>
+    <td class="title">Fleck</td>
+    <td><%fields%1540%data%></td>
+    <td><%fields%1541%data%></td>
+    <td><%fields%1542%data%></td>
+    <td><%fields%1168%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1543%data%>
+  <tr>
+    <td class="title">Mineral</td>
+    <td><%fields%1543%data%></td>
+    <td><%fields%1544%data%></td>
+    <td><%fields%1545%data%></td>
+    <td><%fields%1172%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1546%data%>
+  <tr>
+    <td class="title">Knots</td>
+    <td><%fields%1546%data%></td>
+    <td><%fields%1547%data%></td>
+    <td><%fields%1548%data%></td>
+    <td><%fields%1176%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1549%data%>
+  <tr>
+    <td class="title">Worm Holes</td>
+    <td><%fields%1549%data%></td>
+    <td><%fields%1550%data%></td>
+    <td><%fields%1551%data%></td>
+    <td><%fields%1180%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1552%data%>
+  <tr>
+    <td class="title">Checks</td>
+    <td><%fields%1552%data%></td>
+    <td><%fields%1553%data%></td>
+    <td><%fields%1554%data%></td>
+    <td><%fields%1184%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1555%data%>
+  <tr>
+    <td class="title">Shake</td>
+    <td><%fields%1555%data%></td>
+    <td><%fields%1556%data%></td>
+    <td><%fields%1557%data%></td>
+    <td><%fields%1188%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1558%data%>
+  <tr>
+    <td class="title">Decay</td>
+    <td><%fields%1558%data%></td>
+    <td><%fields%1559%data%></td>
+    <td><%fields%1560%data%></td>
+    <td><%fields%1192%data%></td>
+  </tr>
+  <%end%>
+
+<%if fields%1480%rowcount%>
+  <%foreach fields%1480%grid%>
+  <tr>
+    <td class="title"><%item%A%></td>
+    <td><%item%B%></td>
+    <td><%item%C%></td>
+    <td><%item%D%></td>
+    <td><%item%E%></td>
+  </tr>
+  <%end%>
+<%end%>
+<!--large bottom sections for additional text-->
+<%if fields%1385%data%>
+<tr>
+  <td class="title">Framing Blanks Before Shaping</td>
+  <td colspan="5"><%fields%1385%data%></td>
+</tr>
+<%end%>
+
+<%if fields%1386%data%>
+<tr>
+  <td class="title">Rips in Panels</td>
+  <td colspan="5"><%fields%1386%data%></td>
+</tr>
+<%end%>
+<tr>
+< if fields%1196%data%>
+  <td class="title">Notes</td>
+  <td colspan="5"><%fields%1196%data%></td>
+</tr>
+<%end%>
+</table>
+</body></html>
